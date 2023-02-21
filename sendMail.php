@@ -23,11 +23,11 @@ if (!empty($_POST)) {
     $mail->SMTPAuth = true;
     // $mail->SMTPSecure = 'tls';
     $mail->Port = 2525;
-    $mail->Username = '0ba7ece4995ae3';
-    $mail->Password = 'c902f7580719a2';
+    $mail->Username = 'your_username';
+    $mail->Password = 'your_password';
     
     // Recipients
-    $mail->setFrom('defriant17@gmail.com', 'My Website');
+    $mail->setFrom('your_email@mail.com', 'email_name');
     $mail->addAddress($email, $nama);
     
     // Content
@@ -46,5 +46,3 @@ if (!empty($_POST)) {
 }else{
     return;
 }
-
-?>
